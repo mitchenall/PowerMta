@@ -130,7 +130,7 @@ class PowerMta_Mail_Merge extends PowerMta_Mail
             $charset = $this->_charset;
         }
 
-        $mp = new Zend_Mime_Part($txt);
+        $mp = new Zend_Mime_Part($txtArray);
         $mp->encoding = $encoding;
         $mp->type = Zend_Mime::TYPE_TEXT;
         $mp->disposition = Zend_Mime::DISPOSITION_INLINE;
